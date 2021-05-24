@@ -22,7 +22,7 @@ body {
 #card {
 	background-color: var(--card-background-blue);
 	margin: 2rem;
-	border-radius: 5px;
+	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
 }
@@ -31,7 +31,7 @@ body {
 	position: relative;
 }
 
-#image img{
+#image picture img{
 	width: 100%;
 	height: auto;
 }
@@ -40,8 +40,8 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: var(--accent-violet);
-	opacity: 0.7;
+	background-color: #4d057a;
+	opacity: 0.6;
 	width: 100%;
 	height: 100%;
 }
@@ -99,3 +99,62 @@ body {
  	text-decoration: none;
  	color: var(--attribution-link);
  }
+
+@media (min-width: 567px) {
+	#card {
+		margin: 2rem 5rem;
+	}
+	#heading {
+		margin: 5rem 2rem 2rem;
+	}
+
+	#stats {
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 3rem;
+	}
+
+	#companies, #templates {
+		margin: 0;
+	}
+}
+
+@media (min-width: 992px) {
+	#card {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin-top: 8rem;
+		grid-auto-rows: 400px;
+	}
+
+	#cardImage {
+		order: 2;
+	}
+
+	#image picture img {
+		height: 400px;
+	}
+
+	#cardBody {
+		text-align: left;
+	}
+
+	#heading {
+		font-size: 1.8rem;
+		
+	}
+
+	#stats {
+		justify-content: flex-start;
+		margin: 5rem 2rem;	
+	}
+
+	#companies, #templates {
+		margin-right: 3rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	
+}
+
