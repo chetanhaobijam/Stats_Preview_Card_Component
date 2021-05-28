@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/chetanhaobijam/Stats_Preview_Card_Component)
-- Live Site URL: [](https://chetanhaobijam.github.io/Stats_Preview_Card_Component/)
+- Solution URL: [https://github.com/chetanhaobijam/Stats_Preview_Card_Component](https://github.com/chetanhaobijam/Stats_Preview_Card_Component)
+- Live Site URL: [https://chetanhaobijam.github.io/Stats_Preview_Card_Component/](https://chetanhaobijam.github.io/Stats_Preview_Card_Component/)
 
 ## My process
 
@@ -42,8 +42,6 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
