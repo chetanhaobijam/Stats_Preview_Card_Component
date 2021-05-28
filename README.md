@@ -1,91 +1,116 @@
-# Frontend Mentor - Stats preview card component
+# Frontend Mentor - Stats preview card component solution
 
-![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### The challenge
 
-## The challenge
-
-Your challenge is to build out this card component and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![](./images/screenshot.jpg)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+### Links
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+- Solution URL: [](https://github.com/chetanhaobijam/Stats_Preview_Card_Component)
+- Live Site URL: [](https://chetanhaobijam.github.io/Stats_Preview_Card_Component/)
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## My process
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+### Built with
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
 
-## Building your project
+**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+### What I learned
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+While working on this webpage I get to learn so many things that I don't know earlier. 
+List of things that I have learn from this project.
 
-## Deploying your project
+1. CSS Custom Properties.
+I get to know how to properly apply CSS Custom Properties on my stylesheet. It reduces code repetition and saves a lot of time.
+```css
+:root {
+	--main-background-blue: hsl(233, 47%, 7%);
+	--card-background-blue: hsl(244, 38%, 16%);
+	--accent-violet: hsl(277, 64%, 61%);
+	--main-heading-white: hsl(0, 0%, 100%);
+	--main-paragraph-white: hsla(0, 0%, 100%, 0.75);
+	--stats-headings-white: hsla(0, 0%, 100%, 0.6);
+	--attribution-link: hsl(228, 45%, 44%);
+}
+```
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+2. Shading an image.
+I get to know how to shade a image with slight transparent purple color in this case. I used absolute position to position the shade div exactly over the image.
+```css
+#shade {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #7a0f8c;
+	opacity: 0.6;
+	width: 100%;
+	height: 100%;
+}
+```
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+3. Giving rounded corners to an image.
+While I was doing this project, I kept thinking how to give rounded corners to an image. I gave rounded corners to the main card but since the image covers its entire section I found it hard to give rounded corners to the image. And I didn't want to give rounded corners to the whole image, only some corners. After searching I found that I can do that by giving rounded corners to each corner of the image that I want.
+```css
+#image picture img{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+```
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+4. Giving max-width to an image or card.
+I had lot of problem dealing with the size of the image and the card since they expand so much when I increase the screen-size. After searching I found that I can limit them by applying max-width property.
+```css
+#card {
+	margin: 2rem auto;
+	max-width: 500px;
+}
+```
 
-## Create a custom `README.md`
+### Continued development
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+I want to know more about CSS Custom Properties, how to control the width and height of an element, how to make a website more responsive.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+### Useful resources
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+- [Using CSS custom properties (variables) MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) - The article given there about CSS Custom Properties really help me learn about it.
+- [CSS Max-width property](https://www.w3schools.com/cssref/pr_dim_max-width.asp) - Amazing article about CSS Max-width property. 
+- [CSS Border-radius property](https://www.w3schools.com/cssref/css3_pr_border-radius.asp) - This article let understand more about border-radius property.
 
-## Submitting your solution
+## Author
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+- Frontend Mentor - [@chetanhaobijam](https://www.frontendmentor.io/profile/chetanhaobijam)
+- Twitter - [@chetanhaobijam](https://www.twitter.com/chetanhaobijam)
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+## Acknowledgments
 
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+Thanks to Matt and his team for creating such a great website where we can do coding challenges and test our frontend skills. Looking forward for next challenge.
